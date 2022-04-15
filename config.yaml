@@ -1,0 +1,7 @@
+listen-address: "0.0.0.0:443" #https监听的地址，固定不变
+username: "username" #鉴权用户名，自己定义
+password: "password" #鉴权密码，自己定义
+probe-resist-domain: "shengtao.link" #鉴权的url地址，自己定义
+cert-file: "docker/quic.shengtao.vip_chain.crt" #证书cert路径
+key-file: "docker/quic.shengtao.vip_key.key" #证书key路径
+cheat-host: "127.0.0.1:80" #用于欺骗的反向代理地址，docker内部已经启动这个服务，固定不变
