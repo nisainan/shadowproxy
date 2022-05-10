@@ -8,10 +8,10 @@ import (
 func serveHiddenPage(res http.ResponseWriter, authErr error) {
 	const hiddenPage = `<html>
 <head>
-  <title>PlayProxy</title>
+  <title>ShadowProxy</title>
 </head>
 <body>
-<h1>PlayProxy Hidden Proxy Page!</h1>
+<h1>ShadowProxy Hidden Proxy Page!</h1>
 %s<br/>
 </body>
 </html>`

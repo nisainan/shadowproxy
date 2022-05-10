@@ -1,13 +1,13 @@
-PROG=bin/playproxy
+PROG=bin/shadowproxy
 
 
 SRCS=.
 
 # 安装目录
-INSTALL_PREFIX=/usr/local/playproxy
+INSTALL_PREFIX=/usr/local/shadowproxy
 
 # 配置安装的目录
-CONF_INSTALL_PREFIX=/usr/local/playproxy
+CONF_INSTALL_PREFIX=/usr/local/shadowproxy
 
 # git commit hash
 COMMIT_HASH=$(shell git rev-parse --short HEAD || echo "GitNotFound")
@@ -29,7 +29,7 @@ all:
 RELEASE_DATE = $(shell date '+%Y%m%d%H%M%S')
 RELEASE_VERSION = $(shell git rev-parse --short HEAD || echo "GitNotFound")
 RELEASE_DIR=release_bin
-RELEASE_BIN_NAME=playproxy
+RELEASE_BIN_NAME=shadowproxy
 release:
 	if [ ! -d "./$(RELEASE_DIR)/$(RELEASE_DATE)_$(RELEASE_VERSION)" ]; then \
 	mkdir ./$(RELEASE_DIR)/$(RELEASE_DATE)_$(RELEASE_VERSION); \
@@ -48,6 +48,6 @@ install:
 clean:
 	rm -rf ./bin
 
-	rm -rf $(INSTALL_PREFIX)/bin/playproxy
+	rm -rf $(INSTALL_PREFIX)/bin/shadowproxy
 
 	rm -rf $(CONF_INSTALL_PREFIX)

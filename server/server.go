@@ -4,11 +4,11 @@ import (
 	"context"
 	"encoding/base64"
 	"fmt"
+	"github.com/nisainan/shadowproxy/confer"
+	"github.com/nisainan/shadowproxy/util"
 	"log"
 	"net"
 	"net/http"
-	"playproxy/confer"
-	"playproxy/util"
 	"sync"
 	"time"
 )

@@ -1,4 +1,4 @@
-module playproxy
+module github.com/nisainan/shadowproxy
 
 go 1.16
 

@@ -18,7 +18,7 @@ func (s *Server) onAccept(ctx context.Context, res http.ResponseWriter, req *htt
 	}()
 	// 显示信息，匹配路由之后不做代理
 	if req.Method == "GET" && !req.URL.IsAbs() && req.URL.Path == "/info" {
-		res.Write([]byte("This is PlayProxy."))
+		res.Write([]byte("This is ShadowProxy."))
 		return true
 	}
 	return false

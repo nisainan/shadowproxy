@@ -1,18 +1,18 @@
 package main
 
 import (
+	"github.com/nisainan/shadowproxy/confer"
+	"github.com/nisainan/shadowproxy/server"
 	"github.com/urfave/cli"
 	"log"
 	"os"
 	"os/signal"
-	"playproxy/confer"
-	"playproxy/server"
 )
 
 func main() {
 	log.SetFlags(log.Lshortfile | log.LstdFlags)
 	app := cli.NewApp()
-	app.Name = "playproxy"
+	app.Name = "github.com/nisainan/shadowproxy"
 	app.Flags = []cli.Flag{
 		cli.StringFlag{
 			Name:  "c",

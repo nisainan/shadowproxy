@@ -4,11 +4,11 @@ import (
 	"bufio"
 	"context"
 	"errors"
+	"github.com/nisainan/shadowproxy/util"
 	"io"
 	"log"
 	"net"
 	"net/http"
-	"playproxy/util"
 )
 
 func (s *Server) onRequestProxy(ctx context.Context, res http.ResponseWriter, req *http.Request) {
